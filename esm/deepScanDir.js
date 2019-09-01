@@ -2,8 +2,6 @@
 
 var _fs = require("fs");
 
-var _util = require("util");
-
 var _path = _interopRequireDefault(require("path"));
 
 var _eachLimit = _interopRequireDefault(require("async/eachLimit"));
@@ -12,25 +10,23 @@ var _merge = _interopRequireDefault(require("./utilities/merge"));
 
 var _shouldExclude = _interopRequireDefault(require("./shouldExclude"));
 
-var _Collection = _interopRequireDefault(require("./Collection"));
+var _Storer = _interopRequireDefault(require("./Storer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const pReadir = (0, _util.promisify)(_fs.readdir);
-const dirs = new _Collection.default();
-const files = new _Collection.default();
-
 async function main({
-  from,
-  exclude
+  from = '.',
+  exclude = {}
 }) {
+  const storer = new _Storer.default();
   await traversalFolder({
     from,
-    exclude: getExclusions(exclude)
+    exclude: getExclusions(exclude),
+    storer
   });
   return {
-    files: files.getAll(),
-    dirs: dirs.getAll()
+    files: storer.files.getAll(),
+    dirs: storer.dirs.getAll()
   };
 }
 
@@ -48,9 +44,10 @@ function getExclusions(iptExclude) {
 
 async function traversalFolder({
   from,
-  exclude
+  exclude,
+  storer
 }) {
-  const root = await pReadir(from, {
+  const root = (0, _fs.readdirSync)(from, {
     withFileTypes: true
   });
   await (0, _eachLimit.default)(root, 8, async content => {
@@ -59,10 +56,11 @@ async function traversalFolder({
         return;
       }
 
-      dirs.add(_path.default.join(from, content.name));
+      storer.dirs.add(_path.default.join(from, content.name));
       await traversalFolder({
         from: _path.default.join(from, content.name),
-        exclude
+        exclude,
+        storer
       });
       return;
     }
@@ -71,7 +69,7 @@ async function traversalFolder({
       return;
     }
 
-    files.add(_path.default.join(from, content.name));
+    storer.files.add(_path.default.join(from, content.name));
     return;
   });
 }
