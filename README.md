@@ -1,6 +1,22 @@
-# deep-scan-dir()
+# deepScanDir({from, exclude})
+
+- `from` {String} 目标文件或文件夹，**默认：** `.`
+- `exclude` {Object}
+  - `dir` {String | Array} 文件夹忽略规则
+  - `file` {String | Array} 文件忽略规则
+- 返回: {Object}
+  - `dirs` {Array} 扫描到的文件夹
+  - `files` {Array} 扫描到的文件
 
 深度扫描给定文件夹，额外支持了忽略行为。
+
+## 目录
+
+- [目录](#目录)
+- [安装](#安装)
+- [使用](#使用)
+- [贡献指南](#贡献指南)
+- [证书](#证书)
 
 ## 安装
 
@@ -16,6 +32,18 @@ $ yarn add deep-scan-dir
 
 ```javascript
 import deepScanDir from 'deep-scan-dir';
+
+(async () => {
+  const rslt = await deepScanDir({
+    from: appDirectory,
+    exclude: {
+      dir: [
+        'node_modules',
+        '.git',
+      ],
+    },
+  });
+})();
 ```
 
 ## 贡献指南
