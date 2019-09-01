@@ -1,0 +1,161 @@
+{
+  "name": "deep-scan-dir",
+  "description": "深度扫描给定文件夹，额外支持了忽略行为。",
+  "main": "",
+  "files": [
+    "esm/**/*.js",
+    "src/**/*.js"
+  ],
+  "scripts": {
+    "cli": "./esm/cli.js --help",
+    "build": "npx babel-node ./scripts/clean-built && cross-env NODE_ENV=production npx babel-node ./scripts/build",
+    "clean": "npx babel-node ./scripts/clean",
+    "license": "npx babel-node ./scripts/license",
+    "reprepare": "npx babel-node ./scripts/re-prepare",
+    "lint": "npx eslint --cache .",
+    "test": "cross-env NODE_ENV=test npx babel-node ./scripts/test",
+    "changelog": "npx auto-changelog -p"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "git": {
+    "core.editor": "code"
+  },
+  "gitignore": [
+    "macOS",
+    "Windows",
+    "Linux",
+    "Node",
+    "VisualStudioCode",
+    "SublimeText",
+    "CVS",
+    "Diff",
+    "Vim",
+    "TortoiseGit",
+    "Diff",
+    "Patch"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false,
+    "includeBranch": [
+      "master"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parser": "babel-eslint",
+    "rules": {}
+  },
+  "eslintIgnore": [
+    "benchmark/**",
+    "docs/**",
+    "*-test.js",
+    "esm/**",
+    ".github/**",
+    ".vscode/**",
+    "scripts/**"
+  ],
+  "mocha": {
+    "extension": ["js"],
+    "timeout": 120000,
+    "ui": "tdd",
+    "color": true,
+    "delay": true,
+    "fullStackTrace": true,
+    "checkLeaks": true,
+    "retries": 2
+  },
+  "nyc": {
+    "all": true,
+    "check-coverage": false,
+    "per-file": true,
+    "reporter": ["html"],
+    "report-dir": "./docs/coverage",
+    "cache": false,
+    "exclude": [
+      "esm/**",
+      "benchmark/**",
+      "docs/**",
+      "scripts/**"
+    ],
+    "skip-empty": true,
+    "clean": true
+  },
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "auto-changelog": "1.16.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "cross-env": "^5.2.1",
+    "eslint": "^6.3.0",
+    "execa": "^2.0.4",
+    "fast-glob": "^3.0.4",
+    "license-checker": "^25.0.1",
+    "listr": "^0.14.3",
+    "make-dir": "^3.0.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "p-map": "^3.0.0",
+    "write-file-atomic": "^3.0.0"
+  },
+  "keywords": [
+    "folder",
+    "文件夹",
+    "flat",
+    "扁平化",
+    "cli",
+    "脚手架",
+    "scaffold",
+    "工具",
+    "tool",
+    "oopsunome"
+  ],
+  "version": "0.0.0",
+  "author": {
+    "name": "iyowei",
+    "email": "swzyocowboy@icloud.com",
+    "url": "https://github.com/iTonyYo"
+  },
+  "repository": {
+    "url": "git@github.com:iTonyYo/deep-scan-dir.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/iTonyYo/deep-scan-dir",
+  "bugs": "https://github.com/iTonyYo/deep-scan-dir/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
