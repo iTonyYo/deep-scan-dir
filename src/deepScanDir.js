@@ -2,6 +2,7 @@ import { readdirSync } from 'fs';
 import path from 'path';
 
 import eachLimit from 'async/eachLimit';
+import arrify from 'arrify';
 
 import merge from './utilities/merge';
 import shouldExclude from './shouldExclude';
@@ -27,8 +28,8 @@ function getExclusions(iptExclude) {
   const nativeExclusions = merge(_default, iptExclude);
 
   return {
-    dir: getDirExclusionRegExps(nativeExclusions.dir),
-    file: getFileExclusionRegExps(nativeExclusions.file)
+    dir: getDirExclusionRegExps(arrify(nativeExclusions.dir)),
+    file: getFileExclusionRegExps(arrify(nativeExclusions.file)),
   };
 }
 

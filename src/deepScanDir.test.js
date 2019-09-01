@@ -17,7 +17,7 @@ setTimeout(() => {
       assert.isFalse(rslt.files.length === 0);
     });
 
-    test('支持忽略文件，支持多个忽略规则', async () => {
+    test('支持只忽略文件', async () => {
       const rslt = await deepScanDir({
         from: resolveCwd('src'),
         exclude: {
@@ -28,7 +28,7 @@ setTimeout(() => {
       assert.isFalse(rslt.files.length === 0);
     });
 
-    test('支持忽略文件夹，支持多个忽略规则', async () => {
+    test('支持只忽略文件夹', async () => {
       const rslt = await deepScanDir({
         from: appDirectory,
         exclude: {
@@ -40,6 +40,17 @@ setTimeout(() => {
             'esm',
             '.nyc_output',
           ],
+        },
+      });
+
+      assert.isFalse(rslt.dirs.length === 0);
+    });
+
+    test('支持单个忽略规则', async () => {
+      const rslt = await deepScanDir({
+        from: appDirectory,
+        exclude: {
+          dir: 'node_modules',
         },
       });
 

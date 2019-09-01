@@ -6,6 +6,8 @@ var _path = _interopRequireDefault(require("path"));
 
 var _eachLimit = _interopRequireDefault(require("async/eachLimit"));
 
+var _arrify = _interopRequireDefault(require("arrify"));
+
 var _merge = _interopRequireDefault(require("./utilities/merge"));
 
 var _shouldExclude = _interopRequireDefault(require("./shouldExclude"));
@@ -37,8 +39,8 @@ function getExclusions(iptExclude) {
   };
   const nativeExclusions = (0, _merge.default)(_default, iptExclude);
   return {
-    dir: getDirExclusionRegExps(nativeExclusions.dir),
-    file: getFileExclusionRegExps(nativeExclusions.file)
+    dir: getDirExclusionRegExps((0, _arrify.default)(nativeExclusions.dir)),
+    file: getFileExclusionRegExps((0, _arrify.default)(nativeExclusions.file))
   };
 }
 
