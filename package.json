@@ -69,7 +69,12 @@
       "eslint:recommended"
     ],
     "parser": "babel-eslint",
-    "rules": {}
+    "rules": {},
+    "globals": {
+      "test": true,
+      "suite": true,
+      "run": true
+    }
   },
   "eslintIgnore": [
     "benchmark/**",
