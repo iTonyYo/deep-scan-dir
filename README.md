@@ -4,9 +4,7 @@
 - `exclude` {Object}
   - `dir` {String | Array} 文件夹忽略规则
   - `file` {String | Array} 文件忽略规则
-- 返回: {Object}
-  - `dirs` {Array} 扫描到的文件夹
-  - `files` {Array} 扫描到的文件
+- 返回: {Promise} 扫描到的文件夹、文件
 
 深度扫描给定文件夹，额外支持了忽略行为。
 
@@ -34,7 +32,7 @@ $ yarn add deep-scan-dir
 import deepScanDir from 'deep-scan-dir';
 
 (async () => {
-  const rslt = await deepScanDir({
+  const {dirs, files} = await deepScanDir({
     from: appDirectory,
     exclude: {
       dir: [
