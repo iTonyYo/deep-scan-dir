@@ -86,7 +86,9 @@
     "scripts/**"
   ],
   "mocha": {
-    "extension": ["js"],
+    "extension": [
+      "js"
+    ],
     "timeout": 120000,
     "ui": "tdd",
     "color": true,
@@ -99,7 +101,9 @@
     "all": true,
     "check-coverage": false,
     "per-file": true,
-    "reporter": ["html"],
+    "reporter": [
+      "html"
+    ],
     "report-dir": "./docs/coverage",
     "cache": false,
     "exclude": [
@@ -133,6 +137,7 @@
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "p-map": "^3.0.0",
+    "trash": "^6.0.0",
     "write-file-atomic": "^3.0.0"
   },
   "keywords": [

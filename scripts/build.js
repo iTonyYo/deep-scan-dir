@@ -7,6 +7,15 @@ import chalk from 'chalk';
 
 import { resolveCwd } from './paths';
 
+async function main() {
+  await pMap(await getSrcs(), async (src) => {
+    await build(src);
+    return;
+  }, { concurrency: 8 });
+
+  console.log(chalk `{greenBright 构建成功!}`);
+}
+
 async function build(src) {
   await execa(
     'npx',
@@ -39,14 +48,7 @@ async function getSrcs() {
 
 (async () => {
   try {
-    await pMap(await getSrcs(), async (src) => {
-      await build(src);
-      return;
-    }, { concurrency: 8 });
-
-    await execa('chmod', ['+x', resolveCwd('esm/cli.js')]);
-
-    console.log(chalk `{greenBright 构建成功!}`);
+    await main();
   } catch (err) {
     throw(err);
   }
