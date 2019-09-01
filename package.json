@@ -1,13 +1,11 @@
 {
   "name": "deep-scan-dir",
   "description": "深度扫描给定文件夹，额外支持了忽略行为。",
-  "main": "",
+  "main": "esm/deepScanDir.js",
   "files": [
-    "esm/**/*.js",
-    "src/**/*.js"
+    "esm/**/*.js"
   ],
   "scripts": {
-    "cli": "./esm/cli.js --help",
     "build": "npx babel-node ./scripts/clean-built && cross-env NODE_ENV=production npx babel-node ./scripts/build",
     "clean": "npx babel-node ./scripts/clean",
     "license": "npx babel-node ./scripts/license",
