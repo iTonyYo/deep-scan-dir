@@ -110,7 +110,8 @@
       "esm/**",
       "benchmark/**",
       "docs/**",
-      "scripts/**"
+      "scripts/**",
+      "**/*.test.js"
     ],
     "skip-empty": true,
     "clean": true
