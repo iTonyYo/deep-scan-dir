@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/541030ad0c70589a76f3/maintainability)](https://codeclimate.com/github/iTonyYo/deep-scan-dir/maintainability)
+
 # deepScanDir({from, exclude})
 
 - `from` {String} 目标文件或文件夹，**默认：** `.`
