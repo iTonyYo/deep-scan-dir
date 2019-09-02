@@ -29,11 +29,12 @@ $ yarn add deep-scan-dir
 ## 使用
 
 ```javascript
+import { realpathSync } from 'fs';
 import deepScanDir from 'deep-scan-dir';
 
 (async () => {
   const {dirs, files} = await deepScanDir({
-    from: appDirectory,
+    from: realpathSync(process.cwd()),
     exclude: {
       dir: [
         'node_modules',
