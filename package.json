@@ -106,6 +106,7 @@
     "report-dir": "./docs/coverage",
     "cache": false,
     "exclude": [
+      "lib/**",
       "esm/**",
       "benchmark/**",
       "docs/**",
