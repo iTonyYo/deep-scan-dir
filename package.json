@@ -1,9 +1,9 @@
 {
   "name": "deep-scan-dir",
   "description": "专注于深度扫描给定文件夹，额外仅支持了忽略行为。",
-  "main": "esm/index.js",
+  "main": "lib/index.js",
   "files": [
-    "esm/**/*.js"
+    "lib/**/*.js"
   ],
   "scripts": {
     "build": "npx babel-node ./scripts/clean-built && cross-env NODE_ENV=production npx babel-node ./scripts/build",
@@ -80,6 +80,7 @@
     "docs/**",
     "*-test.js",
     "esm/**",
+    "lib/**",
     ".github/**",
     ".vscode/**",
     "scripts/**"
