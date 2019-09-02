@@ -1,20 +1,14 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/541030ad0c70589a76f3/maintainability)](https://codeclimate.com/github/iTonyYo/deep-scan-dir/maintainability)
 
-# deepScanDir({from, exclude})
-
-- `from` {String} 目标文件或文件夹，**默认：** `.`
-- `exclude` {Object}
-  - `dir` {String | Array} 文件夹忽略规则
-  - `file` {String | Array} 文件忽略规则
-- 返回: {Promise} 扫描到的文件夹、文件
+# deep-scan-dir
 
 专注于深度扫描给定文件夹，额外仅支持了忽略行为。
 
 ## 目录
 
-- [目录](#目录)
 - [安装](#安装)
-- [使用](#使用)
+- [deepScanDir({from, exclude})](#deepscandirfrom-exclude)
+- [deepScanDirSync({from, exclude})](#deepscandirsyncfrom-exclude)
 - [贡献指南](#贡献指南)
 - [证书](#证书)
 
@@ -28,11 +22,19 @@ $ npm i deep-scan-dir
 $ yarn add deep-scan-dir
 ```
 
-## 使用
+## deepScanDir({from, exclude})
+
+- `from` {String} 目标文件或文件夹，**默认：** `.`
+- `exclude` {Object}
+  - `dir` {String | Array} 文件夹忽略规则
+  - `file` {String | Array} 文件忽略规则
+- 返回: {Promise} 扫描到的文件夹、文件
+
+**使用**
 
 ```javascript
 import { realpathSync } from 'fs';
-import deepScanDir from 'deep-scan-dir';
+import deepScanDir from 'deep-scan-dir/lib/deepScanDir';
 
 (async () => {
   const {dirs, files} = await deepScanDir({
@@ -45,6 +47,33 @@ import deepScanDir from 'deep-scan-dir';
     },
   });
 })();
+```
+
+## deepScanDirSync({from, exclude})
+
+- `from` {String} 目标文件或文件夹，**默认：** `.`
+- `exclude` {Object}
+  - `dir` {String | Array} 文件夹忽略规则
+  - `file` {String | Array} 文件忽略规则
+- 返回: {Object} 扫描到的文件夹、文件
+  - `dirs` {Array} 扫描到的文件夹
+  - `files` {Array} 扫描到的文件
+
+**使用**
+
+```javascript
+import { realpathSync } from 'fs';
+import deepScanDirSync from 'deep-scan-dir/lib/deepScanDirSync';
+
+const {dirs, files} = deepScanDirSync({
+  from: realpathSync(process.cwd()),
+  exclude: {
+    dir: [
+      'node_modules',
+      '.git',
+    ],
+  },
+});
 ```
 
 ## 贡献指南

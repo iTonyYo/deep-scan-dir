@@ -31,7 +31,7 @@ async function build(src) {
 function getDestPath(path) {
   return dirname(
     join(
-      resolveCwd('esm'),
+      resolveCwd('lib'),
       path.substring('src/'.length, path.length),
     )
   );

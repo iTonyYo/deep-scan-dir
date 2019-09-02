@@ -1,7 +1,7 @@
 {
   "name": "deep-scan-dir",
   "description": "专注于深度扫描给定文件夹，额外仅支持了忽略行为。",
-  "main": "esm/deepScanDir.js",
+  "main": "esm/index.js",
   "files": [
     "esm/**/*.js"
   ],
