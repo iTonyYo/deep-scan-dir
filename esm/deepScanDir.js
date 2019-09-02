@@ -1,5 +1,10 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
 var _fs = require("fs");
 
 var _path = _interopRequireDefault(require("path"));
@@ -88,4 +93,6 @@ function getFileExclusionRegExps(fileExclusions) {
   });
 }
 
-module.exports = main;
+var _default2 = main;
+exports.default = _default2;
+module.exports = exports.default;

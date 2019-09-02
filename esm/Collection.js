@@ -1,5 +1,10 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
 class Collection {
   constructor() {
     return {
@@ -15,4 +20,6 @@ class Collection {
 
 }
 
-module.exports = Collection;
+var _default = Collection;
+exports.default = _default;
+module.exports = exports.default;

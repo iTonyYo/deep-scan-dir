@@ -15,7 +15,7 @@
     "changelog": "npx auto-changelog -p"
   },
   "engines": {
-    "node": ">=10.13.0"
+    "node": ">=8.9.0"
   },
   "git": {
     "core.editor": "code"
@@ -40,7 +40,7 @@
         "@babel/preset-env",
         {
           "targets": {
-            "node": "current"
+            "node": "8.9.0"
           }
         }
       ]

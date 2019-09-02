@@ -1,5 +1,10 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
 /**
  * 通过 "array.some()" 实现：既定一组规则，用它们
  * 检测一个字符串，只要该字符串符合规则之一，就不再用
@@ -37,4 +42,6 @@ function everyImpl(name, regexrs) {
   });
 }
 
-module.exports = everyImpl;
+var _default = everyImpl;
+exports.default = _default;
+module.exports = exports.default;

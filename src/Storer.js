@@ -9,4 +9,4 @@ class Storer {
   }
 }
 
-module.exports = Storer;
+export default Storer;

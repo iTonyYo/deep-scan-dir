@@ -36,4 +36,4 @@ function everyImpl(name, regexrs) {
   });
 }
 
-module.exports = everyImpl;
+export default everyImpl;

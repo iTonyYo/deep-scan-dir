@@ -12,4 +12,4 @@ class Collection {
   }
 }
 
-module.exports = Collection;
+export default Collection;

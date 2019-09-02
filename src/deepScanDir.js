@@ -75,4 +75,4 @@ function getFileExclusionRegExps(fileExclusions) {
   });
 }
 
-module.exports = main;
+export default main;
