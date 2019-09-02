@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/541030ad0c70589a76f3/maintainability)](https://codeclimate.com/github/iTonyYo/deep-scan-dir/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/541030ad0c70589a76f3/maintainability)](https://codeclimate.com/github/iTonyYo/deep-scan-dir/maintainability) [![Build Status](https://travis-ci.org/iTonyYo/deep-scan-dir.svg?branch=master)](https://travis-ci.org/iTonyYo/deep-scan-dir)
 
 # deep-scan-dir
 
