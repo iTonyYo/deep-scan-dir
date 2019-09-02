@@ -147,16 +147,17 @@
     "write-file-atomic": "^3.0.0"
   },
   "keywords": [
+    "scandir",
+    "scandirectory",
+    "scan",
+    "dir",
     "folder",
     "文件夹",
-    "flat",
-    "扁平化",
-    "cli",
-    "脚手架",
-    "scaffold",
-    "工具",
-    "tool",
-    "oopsunome"
+    "traverse",
+    "recursively-search",
+    "recursive-functions",
+    "recursive",
+    "nodejs"
   ],
   "version": "1.0.1",
   "author": {
