@@ -1,11 +1,18 @@
 # [`deep-scan-dir`][deep-scan-dir] 更新日志
 
+## [v1.0.2](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.1...v1.0.2) - 2019-09-02
+
+#### 提交
+
+- [[`79a651c`](https://github.com/iTonyYo/deep-scan-dir/commit/79a651cac98589f1f81b80ee0395c441a84ad7cc)] 配置: :wrench: 更新关键字
+- [[`d2f81ef`](https://github.com/iTonyYo/deep-scan-dir/commit/d2f81ef94c0f930ae18e9baad34876261c683bc9)] 配置: :wrench: 提供正确的入口文件
 ## [v1.0.1](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.0...v1.0.1) - 2019-09-02
 
 #### 提交
 
 - [[`e174886`](https://github.com/iTonyYo/deep-scan-dir/commit/e174886d27d28058d10eabc4a9e3150b8d783466)] 配置: :wrench: 新增 Travis CI、Coveralls 配置
 - [[`513b650`](https://github.com/iTonyYo/deep-scan-dir/commit/513b6504309e9809442801bf24f377d5f264ee1a)] 功能: :gear: 实现 `deepScanDirSync({from, exclude})`，支持同步编程
+- [[`2c06b72`](https://github.com/iTonyYo/deep-scan-dir/commit/2c06b7297dea92ad74b1f645d081945c2e85f99f)] 发版: :bookmark: v1.0.1
 - [[`688fae5`](https://github.com/iTonyYo/deep-scan-dir/commit/688fae5ce213526cb14329affe615b307a58eb4b)] 架构: :building_construction: 支持 node.js v8.9.0+
 - [[`a7032d5`](https://github.com/iTonyYo/deep-scan-dir/commit/a7032d53d1937ab57f4d36b73cbf53dc79c15839)] 文档: :memo: 更新使用示例
 - [[`90a584b`](https://github.com/iTonyYo/deep-scan-dir/commit/90a584b0bd80ca03713780282da3c35f2bcc622d)] 文档: :memo: 添加 `Coveralls` 徽章
