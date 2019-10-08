@@ -1,5 +1,10 @@
 # [`deep-scan-dir`][deep-scan-dir] 更新日志
 
+## [v1.0.4](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.3...v1.0.4) - 2019-10-08
+
+#### 提交
+
+- [[`abba896`](https://github.com/iTonyYo/deep-scan-dir/commit/abba89600ebbe67e39a0aae97ff7c3b9fbd5897b)] 配置: :wrench: 避免将更新日志打包发布
 ## [v1.0.3](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.2...v1.0.3) - 2019-10-08
 
 #### 提交
