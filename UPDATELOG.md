@@ -10,7 +10,6 @@
 #### 提交
 
 - [[`79a651c`](https://github.com/iTonyYo/deep-scan-dir/commit/79a651cac98589f1f81b80ee0395c441a84ad7cc)] 配置: :wrench: 更新关键字
-- [[`c8159f4`](https://github.com/iTonyYo/deep-scan-dir/commit/c8159f41d1e4255957a611824a1f4dbddd53a1e6)] 发版: :bookmark: v1.0.2
 - [[`d2f81ef`](https://github.com/iTonyYo/deep-scan-dir/commit/d2f81ef94c0f930ae18e9baad34876261c683bc9)] 配置: :wrench: 提供正确的入口文件
 ## [v1.0.1](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.0...v1.0.1) - 2019-09-02
 
@@ -18,7 +17,6 @@
 
 - [[`e174886`](https://github.com/iTonyYo/deep-scan-dir/commit/e174886d27d28058d10eabc4a9e3150b8d783466)] 配置: :wrench: 新增 Travis CI、Coveralls 配置
 - [[`513b650`](https://github.com/iTonyYo/deep-scan-dir/commit/513b6504309e9809442801bf24f377d5f264ee1a)] 功能: :gear: 实现 `deepScanDirSync({from, exclude})`，支持同步编程
-- [[`2c06b72`](https://github.com/iTonyYo/deep-scan-dir/commit/2c06b7297dea92ad74b1f645d081945c2e85f99f)] 发版: :bookmark: v1.0.1
 - [[`688fae5`](https://github.com/iTonyYo/deep-scan-dir/commit/688fae5ce213526cb14329affe615b307a58eb4b)] 架构: :building_construction: 支持 node.js v8.9.0+
 - [[`a7032d5`](https://github.com/iTonyYo/deep-scan-dir/commit/a7032d53d1937ab57f4d36b73cbf53dc79c15839)] 文档: :memo: 更新使用示例
 - [[`90a584b`](https://github.com/iTonyYo/deep-scan-dir/commit/90a584b0bd80ca03713780282da3c35f2bcc622d)] 文档: :memo: 添加 `Coveralls` 徽章
@@ -36,7 +34,6 @@
 - [[`f217ea8`](https://github.com/iTonyYo/deep-scan-dir/commit/f217ea8f6009edbc56ff6deaa9c02d14bb546e0a)] 文档: :memo: 更新 README.md
 - [[`bc9f7cc`](https://github.com/iTonyYo/deep-scan-dir/commit/bc9f7cc29795cea67f72028659e57854d9a442e4)] 功能: :gear: `exclude` 里 `dir`、`file` 两项配置，支持字符串或数组
 - [[`719af41`](https://github.com/iTonyYo/deep-scan-dir/commit/719af4152b9a892255b6bf748cbcc7debd1ada5f)] 工作流: :railway_track: 更新 `build` 构建指令
-- [[`f40439f`](https://github.com/iTonyYo/deep-scan-dir/commit/f40439fa46c3d13040e1f45e7251d1ae18e5677f)] 发版: :bookmark: v1.0.0
 - [[`586e615`](https://github.com/iTonyYo/deep-scan-dir/commit/586e615f1ffec960aac5e48451d69c59572160c7)] 配置: :wrench: 更新 `eslint` 配置
 - [[`d5abfb9`](https://github.com/iTonyYo/deep-scan-dir/commit/d5abfb96c1d4c166b404dc6d3574b2f73734935d)] 配置: :wrench: 配置入口文件
 - [[`e350076`](https://github.com/iTonyYo/deep-scan-dir/commit/e350076634711d8df9be69fa779920235c7cf2c3)] 文档: :memo: 更新 README.md

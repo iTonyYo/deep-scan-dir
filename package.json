@@ -51,7 +51,7 @@
     ]
   },
   "auto-changelog": {
-    "output": "CHANGELOG.md",
+    "output": "UPDATELOG.md",
     "template": "changelog-template.hbs",
     "unreleased": true,
     "commitLimit": false,
