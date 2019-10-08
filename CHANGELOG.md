@@ -1,10 +1,16 @@
 # [`deep-scan-dir`][deep-scan-dir] 更新日志
 
+## [v1.0.3](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.2...v1.0.3) - 2019-10-08
+
+#### 提交
+
+- [[`76d3d5e`](https://github.com/iTonyYo/deep-scan-dir/commit/76d3d5e5876e9cddcbac621c64a45a83306e394b)] 依赖: :arrow_up: 升级依赖
 ## [v1.0.2](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.1...v1.0.2) - 2019-09-02
 
 #### 提交
 
 - [[`79a651c`](https://github.com/iTonyYo/deep-scan-dir/commit/79a651cac98589f1f81b80ee0395c441a84ad7cc)] 配置: :wrench: 更新关键字
+- [[`c8159f4`](https://github.com/iTonyYo/deep-scan-dir/commit/c8159f41d1e4255957a611824a1f4dbddd53a1e6)] 发版: :bookmark: v1.0.2
 - [[`d2f81ef`](https://github.com/iTonyYo/deep-scan-dir/commit/d2f81ef94c0f930ae18e9baad34876261c683bc9)] 配置: :wrench: 提供正确的入口文件
 ## [v1.0.1](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.0...v1.0.1) - 2019-09-02
 
