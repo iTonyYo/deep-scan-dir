@@ -34,6 +34,7 @@ $ yarn add deep-scan-dir
 
 ```javascript
 import { realpathSync } from 'fs';
+// import { deepScanDir } from 'deep-scan-dir';
 import deepScanDir from 'deep-scan-dir/lib/deepScanDir';
 
 (async () => {
@@ -63,6 +64,7 @@ import deepScanDir from 'deep-scan-dir/lib/deepScanDir';
 
 ```javascript
 import { realpathSync } from 'fs';
+// import { deepScanDirSync } from 'deep-scan-dir';
 import deepScanDirSync from 'deep-scan-dir/lib/deepScanDirSync';
 
 const {dirs, files} = deepScanDirSync({
