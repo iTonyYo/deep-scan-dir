@@ -1,5 +1,16 @@
 # [`deep-scan-dir`][deep-scan-dir] 更新日志
 
+## [v1.0.5](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.4...v1.0.5) - 2019-12-25
+
+#### 提交
+
+- [[`48a1af1`](https://github.com/iTonyYo/deep-scan-dir/commit/48a1af1f5e2083019e51b4030dc684ba6b52e5fa)] 依赖: :arrow_up: 升级依赖
+- [[`cad7745`](https://github.com/iTonyYo/deep-scan-dir/commit/cad77457d8d41e8c8b7ea6cd16f4c65a96193c9c)] 重构: :recycle: 重构 `deepScanDir({from, exclude})` & `deepScanDirSync({from, exclude})`
+- [[`632b82b`](https://github.com/iTonyYo/deep-scan-dir/commit/632b82bbbf4932105aa846797dcfcee20802e83d)] 体验: :children_crossing: 减小包体积
+- [[`bb03c20`](https://github.com/iTonyYo/deep-scan-dir/commit/bb03c2049f33041777f6cfaee46549192481131f)] 配置: :wrench: 更新 `.gitignore`
+- [[`4413bdb`](https://github.com/iTonyYo/deep-scan-dir/commit/4413bdbd1659f4dc57a96966c0a7f26aeb498ef6)] 配置: :wrench: 添加 `重构` 主题至更新日志模板
+- [[`a759e95`](https://github.com/iTonyYo/deep-scan-dir/commit/a759e955f0669a6f09959b7b36023902f08ed1c7)] 文档: :memo: 更新 README.md
+- [[`b68da3b`](https://github.com/iTonyYo/deep-scan-dir/commit/b68da3bff947213ea42347e7e640779752826578)] 文档: :memo: 添加 `包质量` 徽章
 ## [v1.0.4](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.3...v1.0.4) - 2019-10-08
 
 #### 提交
