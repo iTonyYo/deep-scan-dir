@@ -1,19 +1,45 @@
 import { resolve, join, dirname } from 'path';
-import { realpathSync } from 'fs';
-import pMap from 'p-map';
+import { readFileSync, writeFileSync, realpathSync } from 'fs';
+
+import Terser from 'terser';
 import fg from 'fast-glob';
 import execa from 'execa';
 import chalk from 'chalk';
 
+import pMap from 'p-map';
+import pSeries from 'p-series';
+import each from 'async/each';
+
 import { resolveCwd } from './paths';
 
 async function main() {
+  await pSeries([
+    () => taskBuild(),
+    () => taskCompress(),
+  ]);
+
+  console.log(chalk `{greenBright 构建成功!}`);
+}
+
+async function taskBuild() {
   await pMap(await getSrcs(), async (src) => {
     await build(src);
     return;
   }, { concurrency: 8 });
+}
 
-  console.log(chalk `{greenBright 构建成功!}`);
+async function taskCompress() {
+  await each(await getLibs(), async (src) => {
+    const { code } = Terser.minify(
+      readFileSync(src, {encoding: 'utf-8'}),
+      {
+        mangle: false,
+      },
+    );
+
+    writeFileSync(src, code);
+    return;
+  });
 }
 
 async function build(src) {
@@ -44,6 +70,12 @@ async function getSrcs() {
   ]);
 
   return srcs;
+}
+
+async function getLibs() {
+  const libs = await fg(['lib/**/*.js']);
+
+  return libs;
 }
 
 (async () => {
