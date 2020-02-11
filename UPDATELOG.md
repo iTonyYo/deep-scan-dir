@@ -1,5 +1,11 @@
 # [`deep-scan-dir`][deep-scan-dir] 更新日志
 
+## [v1.0.6](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.5...v1.0.6) - 2020-02-11
+
+#### 提交
+
+- [[`f44b628`](https://github.com/iTonyYo/deep-scan-dir/commit/f44b62850b5cb5117ed306d21d226a9d20b0ef11)] 依赖: :arrow_up: 升级依赖
+- [[`1717493`](https://github.com/iTonyYo/deep-scan-dir/commit/171749353a6cea05527c5030893df8306facb409)] 工作流: :railway_track: 优化脚手架
 ## [v1.0.5](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.4...v1.0.5) - 2019-12-25
 
 #### 提交
