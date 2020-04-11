@@ -16,7 +16,7 @@
     "changelog": "npx auto-changelog -p"
   },
   "engines": {
-    "node": ">=8.9.0"
+    "node": ">=10"
   },
   "git": {
     "core.editor": "code"
