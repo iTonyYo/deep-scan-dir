@@ -8,4 +8,5 @@ module.exports = {
   appDirectory,
   resolveCwd,
   docsPath: resolveCwd('docs'),
+  srcIndexPath: resolveCwd('src/index.js'),
 };

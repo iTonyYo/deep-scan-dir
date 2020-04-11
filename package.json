@@ -3,10 +3,10 @@
   "description": "专注于深度扫描给定文件夹，额外仅支持了忽略行为。",
   "main": "lib/index.js",
   "files": [
-    "lib/**/*.js"
+    "lib/index.js"
   ],
   "scripts": {
-    "build": "npx babel-node ./scripts/clean-built && cross-env NODE_ENV=production npx babel-node ./scripts/build",
+    "build": "npx babel-node ./scripts/clean-built && cross-env NODE_ENV=production npx babel-node ./scripts/pack",
     "clean": "npx babel-node ./scripts/clean",
     "license": "npx babel-node ./scripts/license",
     "reprepare": "npx babel-node ./scripts/re-prepare",
@@ -41,13 +41,10 @@
         "@babel/preset-env",
         {
           "targets": {
-            "node": "8.9.0"
+            "node": "12.16.1"
           }
         }
       ]
-    ],
-    "plugins": [
-      "add-module-exports"
     ]
   },
   "auto-changelog": {
@@ -130,7 +127,6 @@
     "@babel/preset-env": "^7.9.5",
     "auto-changelog": "2.0.0",
     "babel-eslint": "^10.1.0",
-    "babel-plugin-add-module-exports": "^1.0.2",
     "chai": "^4.2.0",
     "chalk": "^4.0.0",
     "coveralls": "^3.0.11",
@@ -145,6 +141,7 @@
     "nyc": "^15.0.1",
     "p-map": "^4.0.0",
     "p-series": "^2.1.0",
+    "rollup": "^2.6.0",
     "terser": "^4.6.11",
     "trash": "^6.1.1",
     "write-file-atomic": "^3.0.3"
