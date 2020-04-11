@@ -1,5 +1,13 @@
 # [`deep-scan-dir`][deep-scan-dir] 更新日志
 
+## [v1.1.0](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.6...v1.1.0) - 2020-04-11
+
+#### 提交
+
+- [[`9476aa5`](https://github.com/iTonyYo/deep-scan-dir/commit/9476aa5965a790be5ee07570bd7357517b4f8798)] 依赖: :arrow_up: 升级依赖
+- [[`212d2ca`](https://github.com/iTonyYo/deep-scan-dir/commit/212d2cab95d3a4557cd22fb3da4bec86c510065d)] 工作流: :railway_track: 使用 Rollup 进行生产构建
+- [[`65d5a9c`](https://github.com/iTonyYo/deep-scan-dir/commit/65d5a9cce5f2e6c7caa5eeae589786060c1e8e41)] 依赖: :arrow_up: 升级运行时依赖, Node.js &gt;= v10
+- [[`2f205f9`](https://github.com/iTonyYo/deep-scan-dir/commit/2f205f9c6156e416da973b926f4e6cc54af75e0f)] 配置: :wrench: 更新 .codeclimate.yml
 ## [v1.0.6](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.5...v1.0.6) - 2020-02-11
 
 #### 提交
@@ -57,8 +65,8 @@
 - [[`bc9f7cc`](https://github.com/iTonyYo/deep-scan-dir/commit/bc9f7cc29795cea67f72028659e57854d9a442e4)] 功能: :gear: `exclude` 里 `dir`、`file` 两项配置，支持字符串或数组
 - [[`719af41`](https://github.com/iTonyYo/deep-scan-dir/commit/719af4152b9a892255b6bf748cbcc7debd1ada5f)] 工作流: :railway_track: 更新 `build` 构建指令
 - [[`586e615`](https://github.com/iTonyYo/deep-scan-dir/commit/586e615f1ffec960aac5e48451d69c59572160c7)] 配置: :wrench: 更新 `eslint` 配置
-- [[`d5abfb9`](https://github.com/iTonyYo/deep-scan-dir/commit/d5abfb96c1d4c166b404dc6d3574b2f73734935d)] 配置: :wrench: 配置入口文件
 - [[`e350076`](https://github.com/iTonyYo/deep-scan-dir/commit/e350076634711d8df9be69fa779920235c7cf2c3)] 文档: :memo: 更新 README.md
+- [[`d5abfb9`](https://github.com/iTonyYo/deep-scan-dir/commit/d5abfb96c1d4c166b404dc6d3574b2f73734935d)] 配置: :wrench: 配置入口文件
 - [[`3073f87`](https://github.com/iTonyYo/deep-scan-dir/commit/3073f876c1625772873478060a7d06106e27b557)] 文档: :memo: 更新描述
 - [[`79e772f`](https://github.com/iTonyYo/deep-scan-dir/commit/79e772f4ee691ba0e893937bb13beb75915002d2)] 配置: :wrench: 更新 `nyc` 配置
 - [[`47d9273`](https://github.com/iTonyYo/deep-scan-dir/commit/47d927345914e43530289361c8c00599a5829aee)] 依赖: :arrow_up: 更新生产环境下依赖证书列表
