@@ -1,5 +1,5 @@
 import Storer from './Storer';
-import { setHole } from './pcb';
+import { setHole } from './pinboard';
 
 export default () => {
   setHole('storer', new Storer());

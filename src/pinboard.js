@@ -4,10 +4,10 @@
 
 import functionRegistry from './functionRegistry';
 
-export const pcbHole = {};
+export const pinboardHole = {};
 
 export const setHole = (key, value) => {
-  pcbHole[key] = value;
+  pinboardHole[key] = value;
 };
 
 const dispatch = ({ component, input }) => functionRegistry[component](input);

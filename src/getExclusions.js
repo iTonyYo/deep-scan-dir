@@ -1,6 +1,6 @@
 import arrify from 'arrify';
 import merge from './utilities/merge';
-import { setHole } from './pcb';
+import { setHole } from './pinboard';
 
 function getExclusions(iptExclude) {
   const _default = { dir: [], file: [] };

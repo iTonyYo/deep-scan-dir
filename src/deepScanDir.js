@@ -1,6 +1,6 @@
 import traversalFolder from './traversalFolder';
 
-import dispatch, { pcbHole } from './pcb';
+import dispatch, { pinboardHole } from './pinboard';
 
 async function main({ from = '.', exclude = {} }) {
   dispatch({ component: 'newStorer' });
@@ -12,13 +12,13 @@ async function main({ from = '.', exclude = {} }) {
 
   await traversalFolder({
     from,
-    exclude: pcbHole.exclude,
-    storer: pcbHole.storer
+    exclude: pinboardHole.exclude,
+    storer: pinboardHole.storer
   });
 
   return {
-    files: pcbHole.storer.files.getAll(),
-    dirs: pcbHole.storer.dirs.getAll()
+    files: pinboardHole.storer.files.getAll(),
+    dirs: pinboardHole.storer.dirs.getAll()
   };
 }
 

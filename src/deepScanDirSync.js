@@ -1,4 +1,4 @@
-import dispatch, { pcbHole } from './pcb';
+import dispatch, { pinboardHole } from './pinboard';
 
 export default ({ from = '.', exclude = {} }) => {
   dispatch({ component: 'newStorer' });
@@ -12,13 +12,13 @@ export default ({ from = '.', exclude = {} }) => {
     component: 'traversalFolderSync',
     input: {
       from,
-      exclude: pcbHole.exclude,
-      storer: pcbHole.storer
+      exclude: pinboardHole.exclude,
+      storer: pinboardHole.storer
     }
   });
 
   return {
-    files: pcbHole.storer.files.getAll(),
-    dirs: pcbHole.storer.dirs.getAll()
+    files: pinboardHole.storer.files.getAll(),
+    dirs: pinboardHole.storer.dirs.getAll()
   };
 };
