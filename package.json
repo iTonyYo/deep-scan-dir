@@ -172,7 +172,8 @@
   "homepage": "https://github.com/iTonyYo/deep-scan-dir",
   "bugs": "https://github.com/iTonyYo/deep-scan-dir/issues",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   },
   "license": "MIT"
 }
