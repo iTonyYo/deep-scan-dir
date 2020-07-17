@@ -27,3 +27,4 @@ exclude_patterns:
 - "yarn.lock"
 - ".mailmap"
 - "package-lock.json"
+- ".prettierrc"
