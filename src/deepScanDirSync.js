@@ -1,20 +1,24 @@
-import Storer from './Storer';
-import traversalFolderSync from './traversalFolderSync';
-import getExclusions from './getExclusions';
+import dispatch, { pcbHole } from './pcb';
 
-function main({from = '.', exclude = {}}) {
-  const storer = new Storer();
+export default ({ from = '.', exclude = {} }) => {
+  dispatch({ component: 'newStorer' });
 
-  traversalFolderSync({
-    from,
-    exclude: getExclusions(exclude),
-    storer,
+  dispatch({
+    component: 'getExclusions',
+    input: exclude
+  });
+
+  dispatch({
+    component: 'traversalFolderSync',
+    input: {
+      from,
+      exclude: pcbHole.exclude,
+      storer: pcbHole.storer
+    }
   });
 
   return {
-    files: storer.files.getAll(),
-    dirs: storer.dirs.getAll(),
+    files: pcbHole.storer.files.getAll(),
+    dirs: pcbHole.storer.dirs.getAll()
   };
-}
-
-export default main;
+};

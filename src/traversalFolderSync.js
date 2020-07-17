@@ -2,12 +2,12 @@ import { readdirSync } from 'fs';
 import path from 'path';
 import shouldExclude from './shouldExclude';
 
-function traversalFolderSync({from, exclude, storer}) {
+function traversalFolderSync({ from, exclude, storer }) {
   const root = readdirSync(from, {
-    withFileTypes: true,
+    withFileTypes: true
   });
 
-  root.forEach((content) => {
+  root.forEach(content => {
     if (content.isDirectory()) {
       if (shouldExclude(content.name, exclude.dir)) {
         return;
@@ -17,7 +17,7 @@ function traversalFolderSync({from, exclude, storer}) {
       traversalFolderSync({
         from: path.join(from, content.name),
         exclude,
-        storer,
+        storer
       });
 
       return;

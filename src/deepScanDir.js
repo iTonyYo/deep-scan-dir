@@ -1,19 +1,24 @@
-import Storer from './Storer';
 import traversalFolder from './traversalFolder';
-import getExclusions from './getExclusions';
 
-async function main({from = '.', exclude = {}}) {
-  const storer = new Storer();
+import dispatch, { pcbHole } from './pcb';
+
+async function main({ from = '.', exclude = {} }) {
+  dispatch({ component: 'newStorer' });
+
+  dispatch({
+    component: 'getExclusions',
+    input: exclude
+  });
 
   await traversalFolder({
     from,
-    exclude: getExclusions(exclude),
-    storer,
+    exclude: pcbHole.exclude,
+    storer: pcbHole.storer
   });
 
   return {
-    files: storer.files.getAll(),
-    dirs: storer.dirs.getAll(),
+    files: pcbHole.storer.files.getAll(),
+    dirs: pcbHole.storer.dirs.getAll()
   };
 }
 
