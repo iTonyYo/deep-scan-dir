@@ -1,5 +1,17 @@
 # [`deep-scan-dir`][deep-scan-dir] 更新日志
 
+## [v1.2.0](https://github.com/iTonyYo/deep-scan-dir/compare/v1.1.0...v1.2.0) - 2020-07-17
+
+#### 提交
+
+- [[`ce31bd8`](https://github.com/iTonyYo/deep-scan-dir/commit/ce31bd82e58e21a2037e199a456a82aa78f507d9)] 依赖: :arrow_up: 升级依赖
+- [[`c3d9404`](https://github.com/iTonyYo/deep-scan-dir/commit/c3d94049dd8b4e9bbfe3fe9f54b685fc14595888)] 依赖: :arrow_up: 升级依赖
+- [[`80981c6`](https://github.com/iTonyYo/deep-scan-dir/commit/80981c632131212a4d86b1af6427fc62134caa0c)] 架构: :building_construction: 引入 "注册表" 概念，将所有函数注册其中
+- [[`9e72fb4`](https://github.com/iTonyYo/deep-scan-dir/commit/9e72fb49ca70f8edf04c935c1eb562253dad5dc7)] 格式: :art: 重命名钉板相关文件、变量
+- [[`3e89538`](https://github.com/iTonyYo/deep-scan-dir/commit/3e8953866f49dd8a5f98da8eea356c6b0810d12d)] 配置: :wrench: 更新 VSCode 编辑器配置
+- [[`4192457`](https://github.com/iTonyYo/deep-scan-dir/commit/4192457d01ea6e219d9678d0c7b9eb2d6844a4a8)] 配置: :wrench: 新增 .prettierrc
+- [[`b8a063c`](https://github.com/iTonyYo/deep-scan-dir/commit/b8a063c68af9243e9e9eb2dfe73f5f64ecb6a3ed)] 文档: :memo: 移除 'Package Quality' 徽章
+- [[`a7b3f53`](https://github.com/iTonyYo/deep-scan-dir/commit/a7b3f538f62d353964e5d062fe166861acb53943)] 配置: :wrench: 更新 .codeclimate.yml
 ## [v1.1.0](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.6...v1.1.0) - 2020-04-11
 
 #### 提交
@@ -14,7 +26,7 @@
 
 - [[`f44b628`](https://github.com/iTonyYo/deep-scan-dir/commit/f44b62850b5cb5117ed306d21d226a9d20b0ef11)] 依赖: :arrow_up: 升级依赖
 - [[`1717493`](https://github.com/iTonyYo/deep-scan-dir/commit/171749353a6cea05527c5030893df8306facb409)] 工作流: :railway_track: 优化脚手架
-## [v1.0.5](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.4...v1.0.5) - 2019-12-25
+## [v1.0.5](https://github.com/iTonyYo/deep-scan-dir/compare/v1.0.4...v1.0.5) - 2019-12-26
 
 #### 提交
 
